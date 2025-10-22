@@ -52,8 +52,6 @@ Make coding education accessible while giving high schoolers meaningful voluntee
 ---
 *Built with ❤️ by high schoolers, for middle schoolers*
 ```
----
-
 ### 🏛️ Founding Team
 
 **Founded by:** Aarav Arora  
