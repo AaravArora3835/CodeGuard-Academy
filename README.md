@@ -53,33 +53,5 @@ Make coding education accessible while giving high schoolers meaningful voluntee
 *Built with ❤️ by high schoolers, for middle schoolers*
 ```
 
----
-
-## **Step 3: .gitignore (Essential)**
-```
-# Python
-__pycache__/
-*.pyc
-venv/
-env/
-
-# Node
-node_modules/
-build/
-.env
-
-# IDE
-.vscode/
-.idea/
-
-# Secrets (CRITICAL)
-config.py
-*.key
-.env.local
-
-# Database
-*.db
-*.sqlite3
-
-# Logs
-*.log
+© 2025 CodeGuard Academy. All rights reserved.
+Founded by Aarav Arora, Co-Founded by Shubham Gupta, Vihaan Bannur, and Akshath Gangadharmath
