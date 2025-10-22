@@ -52,6 +52,11 @@ Make coding education accessible while giving high schoolers meaningful voluntee
 ---
 *Built with ❤️ by high schoolers, for middle schoolers*
 ```
+---
+
+### 🏛️ Founding Team
+
+**Founded by:** Aarav Arora  
+**Co-Founders:** Akshath Gangadharmath, Shubham Gupta, and Vihaan Bannur
 
 © 2025 CodeGuard Academy. All rights reserved.
-Founded by Aarav Arora, Co-Founded by Shubham Gupta, Vihaan Bannur, and Akshath Gangadharmath
