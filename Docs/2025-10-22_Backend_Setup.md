@@ -1,74 +1,20 @@
-
-
-````markdown
 # 2025-10-22 — Backend Setup Log (Aarav)
 
-**Phase:** Sprint 1 — Foundational Setup  
-**Project:** CodeGuard Academy  
-**Role:** Aarav — Backend / Project Manager  
-**Goal:** Set up Python and Flask backend environment and confirm a working local server.
+**Phase:** Sprint 1 – Foundational Setup
+**Project:** CodeGuard Academy
+**Role:** Aarav – Backend / Project Manager
+**Goal:** Set up Python + Flask backend and confirm local server works.
 
 ---
 
 ## Steps Completed
 
-### 1. Project Folder
-```bash
-cd Documents
-mkdir CodeGuard-Academy
-cd CodeGuard-Academy
-````
+Set up the project folder, created a Python virtual environment, fixed PowerShell execution policy, installed Flask, created `app.py`, and verified the server runs locally.
 
-Folder created successfully in `C:\Users\aarav\Documents`.
-
----
-
-### 2. Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-Virtual environment created inside the project directory.
-
----
-
-### 3. PowerShell Policy Fix
-
-Encountered `UnauthorizedAccess` error when activating the virtual environment.
-Fixed by running:
-
-```bash
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-```
-
-Pressed **Y** to confirm. After that:
-
-```bash
-.\venv\Scripts\Activate.ps1
-```
-
-The `(venv)` tag appeared in the PowerShell prompt.
-
----
-
-### 4. Install Flask
-
-```bash
-pip install flask
-```
-
-Flask 3.1.2 installed successfully.
-
-Screenshot: `2025-10-22_Flask_Installed.png`
-
----
-
-### 5. Create and Run app.py
+**app.py**
 
 ```python
 from flask import Flask
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -79,37 +25,29 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-Run the application:
+Run the server:
 
 ```bash
 python app.py
 ```
 
-Flask server started at **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
-
-Screenshot: `2025-10-22_Flask_Server_Running.png`
+Server running at: **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
 
 ---
 
-## Screenshot Proof
+## Proof
 
-| Filename                              | Description                                                 |
-| ------------------------------------- | ----------------------------------------------------------- |
-| `2025-10-22_Flask_Installed.png`      | Virtual environment active and Flask installed successfully |
-| `2025-10-22_Flask_Server_Running.png` | Flask app running locally with debug mode enabled           |
+* `2025-10-22_Flask_Installed.png` — Flask installed with venv active
+* `2025-10-22_Flask_Server_Running.png` — Local server running
 
 ---
 
 ## Reflection
 
-**Biggest Win:** Fixed the PowerShell execution policy and successfully ran Flask for the first time.
-**Hardest Moment:** Dealing with the `UnauthorizedAccess` error during activation.
-**Skill Learned:** Creating a Python virtual environment and running a local Flask web server.
-**Next Goal:** Build and test a `/ping` API route for frontend connection on October 23.
+* **Win:** Flask running locally after PowerShell policy fix
+* **Lesson:** Virtual environments and script execution policy
+* **Next:** Add `/ping` endpoint for frontend connection
 
 ---
 
 **Status:** Environment ready
-**Next Action:** Connect React frontend to Flask backend tomorrow.
-
-```
