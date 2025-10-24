@@ -14,12 +14,17 @@ Set up the project folder, created a Python virtual environment, fixed PowerShel
 **app.py**
 
 ```python
-from flask import Flask
+from flask import Flask, jsonify
+
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return 'Hello, CodeGuard Academy!'
+
+@app.route('/hint')
+def get_hint():
+    return jsonify({"hint": "Try checking your syntax"})
 
 if __name__ == '__main__':
     app.run(debug=True)
