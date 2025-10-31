@@ -15,18 +15,27 @@ Set up the project folder, created a Python virtual environment, fixed PowerShel
 
 ```python
 from flask import Flask, jsonify
+import random
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return 'Hello, CodeGuard Academy!'
+    return jsonify({"message": "Welcome to CodeGuard Backend!"})
 
-@app.route('/hint')
-def get_hint():
-    return jsonify({"hint": "Try checking your syntax"})
+@app.route("/hint")
+def hint():
+    tips = [
+        "Check your indentation.",
+        "Remember to add parentheses after print().",
+        "Use print() to debug your variables.",
+        "Double-check your variable names.",
+        "Try breaking your code into smaller steps."
+    ]
+    # Return 3 random tips each time
+    return jsonify({"hints": random.sample(tips, 3)})
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
 ```
 

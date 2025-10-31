@@ -1,5 +1,8 @@
 # CodeGuard Academy 🎓
 
+<<<<<<< HEAD
+
+=======
 AI-powered STEM tutoring platform connecting high school tutors with middle school students. Real-time code analysis, personalized learning paths, blockchain-verified volunteer hours.
 
 ## 🎯 Mission
@@ -58,3 +61,5 @@ Make coding education accessible while giving high schoolers meaningful voluntee
 **Co-Founders:** Akshath Gangadharmath, Shubham Gupta, and Vihaan Bannur
 
 © 2025 CodeGuard Academy. All rights reserved.
+
+>>>>>>> bd49a2a6576bd4127663ef0b621cd8b236471337
